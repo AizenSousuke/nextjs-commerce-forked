@@ -59,7 +59,6 @@ export default function Blog() {
         {/** Replace by HTML Content */}
         <div className="text-lg leading-7 font-medium py-6 text-justify max-w-6xl mx-auto">
           <p className="py-6">
-            Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
             Candy canes bonbon dragée jujubes chocolate bar. Cotton candy gummi
             bears toffee cake muffin caramels. Gummi bears danish liquorice ice
             cream pie chocolate cake lemon drops tootsie roll tart. Biscuit

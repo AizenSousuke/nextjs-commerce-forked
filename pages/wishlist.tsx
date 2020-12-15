@@ -7,6 +7,7 @@ import { Heart } from '@components/icons'
 import { Text, Container } from '@components/ui'
 import { WishlistCard } from '@components/wishlist'
 import { defatultPageProps } from '@lib/defaults'
+import configText from '@config/configText'
 
 export async function getStaticProps({
   preview,
@@ -36,7 +37,7 @@ export default function Wishlist() {
                 Your wishlist is empty
               </h2>
               <p className="text-accents-6 px-10 text-center pt-2">
-                Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+                {configText["cart-message"]}
               </p>
             </div>
           ) : (

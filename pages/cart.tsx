@@ -8,6 +8,7 @@ import { Button } from '@components/ui'
 import { Bag, Cross, Check } from '@components/icons'
 import { CartItem } from '@components/cart'
 import { Text } from '@components/ui'
+import configText from '@config/configText'
 
 export async function getStaticProps({
   preview,
@@ -52,7 +53,7 @@ export default function Cart() {
               Your cart is empty
             </h2>
             <p className="text-accents-6 px-10 text-center pt-2">
-              Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+              {configText['cart-message']}
             </p>
           </div>
         ) : error ? (

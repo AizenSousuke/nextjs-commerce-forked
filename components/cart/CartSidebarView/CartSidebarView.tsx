@@ -8,6 +8,7 @@ import useCart from '@bigcommerce/storefront-data-hooks/cart/use-cart'
 import usePrice from '@bigcommerce/storefront-data-hooks/use-price'
 import CartItem from '../CartItem'
 import s from './CartSidebarView.module.css'
+import configText from '@config/configText'
 
 const CartSidebarView: FC = () => {
   const { closeSidebar } = useUI()
@@ -65,7 +66,7 @@ const CartSidebarView: FC = () => {
             Your cart is empty
           </h2>
           <p className="text-accents-3 px-10 text-center pt-2">
-            Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+            {configText["cart-message"]}
           </p>
         </div>
       ) : error ? (

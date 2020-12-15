@@ -4,6 +4,7 @@ import getAllPages from '@bigcommerce/storefront-data-hooks/api/operations/get-a
 import { Layout } from '@components/common'
 import { Container, Text } from '@components/ui'
 import { Bag } from '@components/icons'
+import configText from '@config/configText'
 
 export async function getStaticProps({
   preview,
@@ -28,7 +29,7 @@ export default function Orders() {
           No orders found
         </h2>
         <p className="text-accents-6 px-10 text-center pt-2">
-          Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+          {configText["cart-message"]}
         </p>
       </div>
     </Container>
