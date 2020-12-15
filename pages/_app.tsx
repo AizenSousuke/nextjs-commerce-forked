@@ -1,5 +1,6 @@
 import '@assets/main.css'
 import 'keen-slider/keen-slider.min.css'
+import "tailwindcss/tailwind.css";
 
 import { FC } from 'react'
 import type { AppProps } from 'next/app'

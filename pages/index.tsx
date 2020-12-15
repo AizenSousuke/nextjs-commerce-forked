@@ -84,6 +84,9 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempore fugit perferendis tempora excepturi placeat quibusdam, deserunt officia temporibus? Reprehenderit commodi deserunt dolorem pariatur atque soluta, eaque porro. Inventore, eius.
+      </div>
       <Grid>
         {featured.slice(0, 3).map(({ node }, i) => (
           <ProductCard
