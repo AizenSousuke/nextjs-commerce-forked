@@ -37,7 +37,7 @@ export default function Wishlist() {
                 Your wishlist is empty
               </h2>
               <p className="text-accents-6 px-10 text-center pt-2">
-                {configText["cart-message"]}
+                {configText["cart_message"]}
               </p>
             </div>
           ) : (

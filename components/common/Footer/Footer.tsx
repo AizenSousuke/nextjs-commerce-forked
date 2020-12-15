@@ -8,6 +8,7 @@ import { Github, Vercel } from '@components/icons'
 import { Logo, Container } from '@components/ui'
 import { I18nWidget } from '@components/common'
 import s from './Footer.module.css'
+import configText from '@config/configText'
 
 interface Props {
   className?: string
@@ -97,7 +98,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
         </div>
         <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4">
           <div>
-            <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
+            <span>&copy; 2020 {configText.store_title}. All rights reserved.</span>
           </div>
           <div className="flex items-center text-primary">
             <span className="text-primary">Crafted by</span>

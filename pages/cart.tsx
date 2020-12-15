@@ -53,7 +53,7 @@ export default function Cart() {
               Your cart is empty
             </h2>
             <p className="text-accents-6 px-10 text-center pt-2">
-              {configText['cart-message']}
+              {configText['cart_message']}
             </p>
           </div>
         ) : error ? (

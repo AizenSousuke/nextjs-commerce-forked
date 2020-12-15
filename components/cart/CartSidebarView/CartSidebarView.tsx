@@ -66,7 +66,7 @@ const CartSidebarView: FC = () => {
             Your cart is empty
           </h2>
           <p className="text-accents-3 px-10 text-center pt-2">
-            {configText["cart-message"]}
+            {configText["cart_message"]}
           </p>
         </div>
       ) : error ? (

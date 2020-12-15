@@ -9,6 +9,7 @@ import { getConfig } from '@bigcommerce/storefront-data-hooks/api'
 import getAllProducts from '@bigcommerce/storefront-data-hooks/api/operations/get-all-products'
 import getSiteInfo from '@bigcommerce/storefront-data-hooks/api/operations/get-site-info'
 import getAllPages from '@bigcommerce/storefront-data-hooks/api/operations/get-all-pages'
+import configText from '@config/configText'
 
 export async function getStaticProps({
   preview,
@@ -84,9 +85,6 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempore fugit perferendis tempora excepturi placeat quibusdam, deserunt officia temporibus? Reprehenderit commodi deserunt dolorem pariatur atque soluta, eaque porro. Inventore, eius.
-      </div>
       <Grid>
         {featured.slice(0, 3).map(({ node }, i) => (
           <ProductCard
