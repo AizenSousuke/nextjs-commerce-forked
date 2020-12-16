@@ -10,6 +10,7 @@ import getAllProducts from '@bigcommerce/storefront-data-hooks/api/operations/ge
 import getSiteInfo from '@bigcommerce/storefront-data-hooks/api/operations/get-site-info'
 import getAllPages from '@bigcommerce/storefront-data-hooks/api/operations/get-all-pages'
 import configText from '@config/configText'
+import Section from '@components/ui/Section/Section'
 
 export async function getStaticProps({
   preview,
@@ -85,6 +86,7 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
+      <Section SectionTitle={"Academy City Productions"} SectionSubtitle={"Get your fix today!"} />
       <Grid>
         {featured.slice(0, 3).map(({ node }, i) => (
           <ProductCard
