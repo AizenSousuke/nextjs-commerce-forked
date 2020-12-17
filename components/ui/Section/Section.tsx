@@ -9,12 +9,14 @@ interface SectionProps {
 
 const Section: FC<SectionProps> = (props) => {
   return (
-    <Container>
-      <div className="grid grid-cols-1">
-          <div className={s.title + " text-center tracking-widest"}>{props.SectionTitle}</div>
-          <div className={s.subtitle + " text-center tracking-tighter"}>{props.SectionSubtitle}</div>
+    <div>
+      <div className={s.title + ' text-center tracking-widest'}>
+        {props.SectionTitle}
       </div>
-    </Container>
+      <div className={s.subtitle + ' text-center tracking-tighter'}>
+        {props.SectionSubtitle}
+      </div>
+    </div>
   )
 }
 
